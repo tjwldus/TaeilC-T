@@ -55,6 +55,7 @@ function Navbar({ isSolid, isHovered, onMenuClick }) {
                 {item.name}
               </Link>
               <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[4px] bg-[#57C84D] transition-all duration-300 ${isHovered ? "w-0 group-hover:w-12" : "w-0"}`} />
+
             </li>
           ))}
         </ul>
@@ -103,6 +104,7 @@ function Navbar({ isSolid, isHovered, onMenuClick }) {
   </div>
 </div>
     </div>
+
   );
 }
 

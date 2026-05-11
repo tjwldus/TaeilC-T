@@ -34,7 +34,7 @@ export default function Home() {
             hasAnimated.current = true;
 
             const target = 31;     // 목표 숫자
-            const duration = 3000; // 3초
+            const duration = 3000; // 1.8초
             const start = performance.now();
 
             const animate = (now) => {

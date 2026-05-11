@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import OptimizedImage from "./OptimizedImage";
+
 import Navbar from "./Navbar";
 
 function Header() {
@@ -23,6 +24,7 @@ function Header() {
     <header
       className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
         isSolid ? "bg-white shadow-sm" : "bg-transparent"
+
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -36,6 +38,7 @@ function Header() {
                 src="태일-로고-removebg-preview.webp"
                 alt="태일씨앤티"
                 className="h-full w-auto object-contain"
+
               />
             </div>
           </Link>
@@ -52,6 +55,7 @@ function Header() {
             <button className={`transition-colors uppercase ${isSolid ? "hover:text-slate-900" : "hover:text-white"}`}>KR</button>
             <span>|</span>
             <button className={`transition-colors uppercase ${isSolid ? "hover:text-slate-900" : "hover:text-white"}`}>EN</button>
+
           </div>
         </div>
       </div>
