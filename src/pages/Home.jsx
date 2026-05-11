@@ -34,7 +34,7 @@ export default function Home() {
             hasAnimated.current = true;
 
             const target = 31;     // 목표 숫자
-            const duration = 3000; // 1.8초
+            const duration = 3000; // 3초
             const start = performance.now();
 
             const animate = (now) => {
@@ -234,7 +234,7 @@ export default function Home() {
                 {
                   title: "Complex Infrastructure",
                   loc: "SEOUL",
-                  img: "https://images.unsplash.com/photo-1541975097447-bc6df13fe413?q=80&w=2070",
+                  img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070",
                 },
                 {
                   title: "Industrial Plant",
@@ -270,7 +270,7 @@ export default function Home() {
 
                     <div className="mt-10 flex items-center gap-3 text-sm font-semibold text-slate-500 group-hover:text-[#4E9F6D] transition-colors duration-300">
                       VIEW DETAIL
-                      <span>→</span>
+                      <span className="transition-transform duration-300 group-hover:translate-x-2">→</span>
                     </div>
                   </div>
                 </div>

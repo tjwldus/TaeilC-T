@@ -86,12 +86,15 @@ function Navbar({ isSolid, isHovered, onMenuClick }) {
                 key={s.name}
                 to={s.href}
                 onClick={onMenuClick}
-                className="group/item relative w-full max-w-[180px] py-3.5 rounded-2xl transition-all duration-300 hover:bg-[#F2F9F1] text-center"
+                className="group/item relative w-full max-w-[180px] py-3.5 text-center transition-all duration-300"
               >
-                <span className="relative z-10 text-[19px] font-semibold text-slate-500 group-hover/item:text-[#49b640] transition-colors">
+                {/* 텍스트: 위치 고정, 색상만 변경 */}
+                <span className="relative z-10 text-[18px] font-semibold text-slate-500 group-hover/item:text-[#49b640] transition-colors duration-300">
                   {s.name}
                 </span>
-                <span className="absolute bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#57C84D] rounded-full transition-all duration-300 group-hover/item:w-6 opacity-0 group-hover/item:opacity-100" />
+                
+                {/* 하단 바: 중앙에서 양옆으로 혹은 왼쪽에서 오른쪽으로 슥 */}
+                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#49b640] transition-all duration-300 group-hover/item:w-12 opacity-0 group-hover/item:opacity-100" />
               </Link>
             ))}
           </div>
